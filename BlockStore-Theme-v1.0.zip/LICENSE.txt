@@ -1,0 +1,63 @@
+========================================
+  BlockStore Theme — License
+  Version 1.0
+========================================
+
+Copyright (c) 2025 [Your Name]
+
+----------------------------------------
+  WHAT YOU CAN DO
+----------------------------------------
+
+✓ Use this theme on ONE personal or commercial project
+✓ Modify the code however you like
+✓ Use it for your own server / store
+✓ Use it for a client project (one project per license)
+
+----------------------------------------
+  WHAT YOU CANNOT DO
+----------------------------------------
+
+✗ Resell or redistribute this theme as-is
+✗ Share the files with others
+✗ Claim the theme as your own work
+✗ Use it in multiple projects (buy a new license per project)
+✗ Include it in a template pack or bundle for resale
+
+----------------------------------------
+  THIRD-PARTY ASSETS
+----------------------------------------
+
+- Google Fonts (Press Start 2P, Inter, Cairo)
+  → Free, open-source, allowed for commercial use.
+  → https://fonts.google.com
+
+- Emoji icons (💳 🅿️ 🧾 📱 🍎 ⚡ 🔒 💬)
+  → Rendered by the user's OS, not included as files.
+  → Free to use.
+
+- No images or illustrations are included.
+  All visuals are pure CSS.
+
+----------------------------------------
+  DISCLAIMER
+----------------------------------------
+
+This theme is provided "as is", without warranty of any kind.
+The author is not responsible for any damages or issues arising
+from the use of this theme.
+
+The demo admin panel is for demonstration purposes only and is
+NOT secure for production use.
+
+Not affiliated with any game publisher, including Mojang or
+Microsoft.
+
+----------------------------------------
+  CONTACT
+----------------------------------------
+
+For licensing questions:
+[Your email here]
+
+========================================

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockStore — Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ستايل مخصوص للأدمن عشان نضمن إنه شغال 100% */
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .admin-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #262626;
+            padding-bottom: 20px;
+        }
+        .admin-header h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 20px;
+            color: #4ade80;
+            margin: 0;
+        }
+        .admin-card {
+            background: #181818;
+            border: 1px solid #262626;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        .admin-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .admin-card h2 {
+            color: #fff;
+            font-size: 18px;
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #9ca3af;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: #141414;
+            border: 1px solid #262626;
+            color: #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #4ade80;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .btn-save {
+            background: #4ade80;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+        .btn-save:hover { background: #22c55e; }
+        .btn-delete {
+            background: transparent;
+            color: #ef4444;
+            border: 1px solid #ef4444;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn-delete:hover { background: #ef4444; color: #fff; }
+        .login-box {
+            text-align: center;
+            margin-top: 100px;
+            background: #181818;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .login-box h1 {
+            font-family: 'Press Start 2P', monospace; 
+            color: #4ade80;
+            font-size: 16px;
+        }
+        .login-box input {
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 15px;
+            background: #141414;
+            border: 1px solid #262626;
+            color: #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-box button {
+            width: 100%;
+        }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4ade80;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شاشة الباسورد -->
+    <div id="adminLogin" class="login-box">
+        <h1>🔒 Admin Access</h1>
+        <p style="color: #9ca3af; margin-bottom: 20px;">Enter password to manage your store</p>
+        <input type="password" id="adminPass" placeholder="Password">
+        <button class="btn-save" id="loginBtn">Login</button>
+        <p id="loginError" style="color: #ef4444; margin-top: 10px; min-height: 20px;"></p>
+        <p style="color: #9ca3af; font-size: 12px; margin-top: 20px;">Demo password: <strong>admin123</strong></p>
+    </div>
+
+    <!-- لوحة التحكم -->
+    <div id="adminPanel" style="display:none;">
+        <div class="admin-container">
+            <div class="admin-header">
+                <h1>Admin Panel</h1>
+                <a href="index.html" style="color: #4ade80; text-decoration: none; font-weight: bold;">← View Site</a>
+            </div>
+
+            <div id="ranksEditor"></div>
+
+            <div style="margin-top: 30px; display: flex; gap: 15px;">
+                <button class="btn-save" id="saveBtn">💾 Save Changes</button>
+                <button class="btn-save" id="addRankBtn" style="background: #3b82f6; color: #fff;">+ Add New Rank</button>
+                <button class="btn-save" id="resetBtn" style="background: #ef4444; color: #fff;">↺ Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Changes Saved!</div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

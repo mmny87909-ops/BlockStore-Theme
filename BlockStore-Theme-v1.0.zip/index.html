@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>BlockStore — Premium Gaming Ranks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;700&family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-block"></span>
+                BlockStore
+            </a>
+            <nav class="nav">
+                <a href="#ranks" data-i18n="nav_ranks">الرتب</a>
+                <a href="#features" data-i18n="nav_features">المميزات</a>
+                <a href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-btn" id="langBtn" type="button">English</button>
+                <a href="#" class="btn btn-primary" data-i18n="cart">السلة (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <span class="badge" data-i18n="hero_badge">⚡ موسم جديد متاح</span>
+                <h1 data-i18n="hero_title">ارفع مستواك في <span class="accent">عالم الجيمنج</span></h1>
+                <p data-i18n="hero_desc">رتب حصرية، مميزات مخصصة، وتسليم فوري. انضم لآلاف اللاعبين المتفوقين على السيرفر.</p>
+                <div class="hero-actions">
+                    <a href="#ranks" class="btn btn-primary" data-i18n="hero_btn1">تصفح الرتب</a>
+                    <a href="#features" class="btn btn-ghost" data-i18n="hero_btn2">اعرف المزيد</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="block block-1"></div>
+                <div class="block block-2"></div>
+                <div class="block block-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ranks" id="ranks">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-i18n="shop_badge">💰 المتجر</span>
+                <h2 data-i18n="shop_title">اختر رتبتك</h2>
+                <p data-i18n="shop_desc">تسليم فوري. وصول مدى الحياة. بدون رسوم خفية.</p>
+            </div>
+            <div class="ranks-grid">
+
+                <div class="rank-card">
+                    <div class="rank-icon icon-green"></div>
+                    <h3 data-i18n="rank1_name">المبتدئ</h3>
+                    <div class="rank-price"><span>$4</span>.99</div>
+                    <ul class="rank-perks">
+                        <li data-i18n="rank1_p1">✓ شات ملون</li>
+                        <li data-i18n="rank1_p2">✓ طيران في اللوبي</li>
+                        <li data-i18n="rank1_p3">✓ بيتين</li>
+                    </ul>
+                    <a href="#" class="btn btn-ghost" data-i18n="buy">اشتري الآن</a>
+                </div>
+
+                <div class="rank-card featured">
+                    <span class="ribbon" data-i18n="popular">الأكثر شعبية</span>
+                    <div class="rank-icon icon-gold"></div>
+                    <h3 data-i18n="rank2_name">النخبة</h3>
+                    <div class="rank-price"><span>$9</span>.99</div>
+                    <ul class="rank-perks">
+                        <li data-i18n="rank2_p1">✓ كل مميزات المبتدئ</li>
+                        <li data-i18n="rank2_p2">✓ طيران في كل مكان</li>
+                        <li data-i18n="rank2_p3">✓ 5 بيوت</li>
+                        <li data-i18n="rank2_p4">✓ لقب مخصص</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-i18n="buy">اشتري الآن</a>
+                </div>
+
+                <div class="rank-card">
+                    <div class="rank-icon icon-purple"></div>
+                    <h3 data-i18n="rank3_name">الأسطورة</h3>
+                    <div class="rank-price"><span>$19</span>.99</div>
+                    <ul class="rank-perks">
+                        <li data-i18n="rank3_p1">✓ كل مميزات النخبة</li>
+                        <li data-i18n="rank3_p2">✓ أمر /nick</li>
+                        <li data-i18n="rank3_p3">✓ 10 بيوت</li>
+                        <li data-i18n="rank3_p4">✓ إكسسوارات حصرية</li>
+                        <li data-i18n="rank3_p5">✓ دعم بأولوية</li>
+                    </ul>
+                    <a href="#" class="btn btn-ghost" data-i18n="buy">اشتري الآن</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-i18n="why_badge">✨ ليه احنا</span>
+                <h2 data-i18n="why_title">ليه تختار BlockStore</h2>
+                <p data-i18n="why_desc">مبني للاعبين اللي عايزين الأفضل.</p>
+            </div>
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-i18n="feat1_title">تسليم فوري</h3>
+                    <p data-i18n="feat1_desc">رتبتك تفعل لحظة الدفع. مفيش انتظار، مفيش تذاكر دعم.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-i18n="feat2_title">دفع آمن</h3>
+                    <p data-i18n="feat2_desc">مدعوم بـ Stripe. بياناتك مشفرة وآمنة.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 data-i18n="feat3_title">دعم 24/7</h3>
+                    <p data-i18n="feat3_desc">ناس حقيقية جاهزة تساعدك على ديسكورد في أي وقت.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-i18n="faq_badge">❓ الأسئلة</span>
+                <h2 data-i18n="faq_title">الأسئلة الشائعة</h2>
+                <p data-i18n="faq_desc">كل اللي محتاج تعرفه قبل ما تشتري.</p>
+            </div>
+            <div class="faq-list">
+
+                <details class="faq-item">
+                    <summary data-i18n="faq1_q">التسليم بياخد قد إيه؟</summary>
+                    <p data-i18n="faq1_a">فوري. بمجرد تأكيد الدفع، الرتبة بتتفعل على حسابك تلقائياً.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq2_q">أقدر أطور رتبتي بعدين؟</summary>
+                    <p data-i18n="faq2_a">أيوة. بتدفع الفرق بس بين الرتبتين. ومميزاتك القديمة بتفضل معاك.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq3_q">بتقبلوا إيه طرق دفع؟</summary>
+                    <p data-i18n="faq3_a">بطاقات ائتمان، PayPal، فوري، ومحافظ إلكترونية (فودافون كاش، اتصالات كاش، أورنج كاش). كل المدفوعات مشفرة.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq4_q">الرتب بتنتهي؟</summary>
+                    <p data-i18n="faq4_a">أبداً. كل الرتب مدى الحياة ومش بتنتهي، حتى لو سبت السيرفر.</p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-block"></span>
+                    BlockStore
+                </a>
+                <p data-i18n="footer_tagline">رتب جيمنج حصرية للاعبين الجادين.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer_shop">المتجر</h4>
+                <a href="#ranks" data-i18n="nav_ranks">الرتب</a>
+                <a href="#features" data-i18n="nav_features">المميزات</a>
+                <a href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer_support">الدعم</h4>
+                <a href="#" data-i18n="footer_discord">ديسكورد</a>
+                <a href="#" data-i18n="footer_contact">اتصل بنا</a>
+                <a href="#" data-i18n="footer_refunds">الاسترجاع</a>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer_legal">قانوني</h4>
+                <a href="#" data-i18n="footer_terms">الشروط</a>
+                <a href="#" data-i18n="footer_privacy">الخصوصية</a>
+                <a href="#" data-i18n="footer_license">الترخيص</a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer_copy">© 2025 BlockStore. جميع الحقوق محفوظة. غير مرتبط بأي ناشر ألعاب.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" type="button">×</button>
+
+            <div class="modal-head">
+                <h3 data-i18n="pay_title">أكمل الدفع</h3>
+                <p data-i18n="pay_desc">اختار طريقة الدفع المفضلة</p>
+            </div>
+
+            <div class="pay-methods">
+
+                <button class="pay-method" type="button">
+                    <span class="pay-icon">💳</span>
+                    <span class="pay-name" data-i18n="pay_card">بطاقة ائتمان / خصم</span>
+                </button>
+
+                <button class="pay-method" type="button">
+                    <span class="pay-icon">🅿️</span>
+                    <span class="pay-name" data-i18n="pay_paypal">PayPal</span>
+                </button>
+
+                <button class="pay-method" type="button">
+                    <span class="pay-icon">🧾</span>
+                    <span class="pay-name" data-i18n="pay_fawry">فوري</span>
+                </button>
+
+                <button class="pay-method" type="button">
+                    <span class="pay-icon">📱</span>
+                    <span class="pay-name" data-i18n="pay_wallet">محفظة إلكترونية</span>
+                </button>
+
+                <button class="pay-method" type="button">
+                    <span class="pay-icon">🍎</span>
+                    <span class="pay-name" data-i18n="pay_apple">Apple Pay</span>
+                </button>
+
+            </div>
+
+            <p class="modal-foot" data-i18n="pay_secure">🔒 كل المدفوعات آمنة ومشفرة.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
